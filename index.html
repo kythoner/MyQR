@@ -25,7 +25,6 @@
         if (qrText.value.length > 0) {
             let text = qrText.value
             text = text.replace(/\&/g, '%26')
-            \\alert(text)
             qrImage.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + text + '&size=220x220&margin=0';
             imgBox.classList.add("show-img")
         } else {
